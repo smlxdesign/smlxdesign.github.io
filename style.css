@@ -55,13 +55,13 @@ h2 {
     position: absolute;
     top: calc(100dvh - 4rem);
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
 }
 
 .social-links img {
     height: auto;
-    width: 2rem;
+    width: 1.25rem;
 }
 
 @media only screen and (min-width: 600px) {
