@@ -1,6 +1,7 @@
 :root {
     --bg: #D8D0F1;
     --fg: #1F1E5E;
+    --img-fg: invert(13%) sepia(40%) saturate(2923%) hue-rotate(225deg) brightness(94%) contrast(102%);
     font-family: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1;
     font-size: 16px;
@@ -11,12 +12,17 @@
     :root {
         --bg: #181546;
         --fg: #D8D0F1;
+        --img-fg: invert(86%) sepia(9%) saturate(911%) hue-rotate(208deg) brightness(99%) contrast(90%);
     }
 }
 
 @supports (font-variation-settings: normal) {
     :root { font-family: InterVariable, sans-serif; }
   }
+
+.recolorsvg {
+    filter: var(--img-fg);
+}
 
 body {
     display: flex;
@@ -44,6 +50,25 @@ h2 {
     font-weight: 500;
 }
 
+.social-link {
+    /* Setting position */
+    position: absolute;
+    top: calc(100dvh - 4rem);
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.social-link img {
+    height: auto;
+    width: 1rem;
+}
+
+.social-link a {
+    color: var(--fg);
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 600px) {
     h1, h2, h3, h4, h5, h6 {
         font-size: 1.5rem;
@@ -59,7 +84,7 @@ h2 {
 
 @media only screen and (min-width: 850px) {
     h1, h2, h3, h4, h5, h6 {
-        font-size: 2 rem;
+        font-size: 2rem;
         width: 50vw;
     }
 }
