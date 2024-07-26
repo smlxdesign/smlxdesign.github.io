@@ -9,4 +9,4 @@
 <!-- Breadtext -->
 This website is built to just be a placeholder until my new website is complete. I tried building it using [Pico CSS](picocss.com), but I do not think i succeeded. I really only used the built-in colours like `pico-colors-indigo`.
 
-For this project I used the Mastodon icon from [simpleicons](https://simpleicons.org). Then I used [CSS filter generator](https://codepen.io/sosuke/pen/Pjoqqp) by [Barrett Sonntag](https://codepen.io/sosuke) to convert the icon from black to the correct hex color.
+For this project I used social media icons from [simpleicons](https://simpleicons.org). Then I used [CSS filter generator](https://codepen.io/sosuke/pen/Pjoqqp) by [Barrett Sonntag](https://codepen.io/sosuke) to convert the icon from black to the correct hex color.

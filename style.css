@@ -50,23 +50,18 @@ h2 {
     font-weight: 500;
 }
 
-.social-link {
+.social-links {
     /* Setting position */
     position: absolute;
     top: calc(100dvh - 4rem);
     display: flex;
-    gap: 0.25rem;
+    gap: 1rem;
     align-items: center;
 }
 
-.social-link img {
+.social-links img {
     height: auto;
     width: 1rem;
-}
-
-.social-link a {
-    color: var(--fg);
-    text-decoration: none;
 }
 
 @media only screen and (min-width: 600px) {
