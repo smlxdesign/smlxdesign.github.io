@@ -1,15 +1,44 @@
+<style>
+    :root {
+        --bg: var(--pico-color-indigo-150);
+        --fg: var(--pico-color-indigo-850);
+    }
+    body {
+        height: 100vh;
+        text-align: center;
+        align-content: center;
+        background: var(--bg);
+    }
+    .flex {
+        gap: 2px;
+    }
+    h3 {
+        margin: 0 !important;
+        color: var(--fg) !important;
+    }
+    @media (prefers-color-scheme: dark) {
+        /* Only applies in dark mode */
+        :root {
+            --bg: var(--pico-color-indigo-900);
+            --fg: var(--pico-color-indigo-200);
+        }
+    }
+</style>
+
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/pico.min.css">
-    <title>Hello world!</title>
+    <link rel="stylesheet" href="css/pico.colors.min.css">
+    <title>smlx design</title>
   </head>
-  <body>
-    <main class="container">
-      <h1>Hello world!</h1>
+  <body class="overflow-none">
+    <main class="container flex">
+      <h3> <strong>Hello!</strong></h3>
+      <h3>This website is currently under construction. Come back in a while :)</h3>
     </main>
   </body>
 </html>
