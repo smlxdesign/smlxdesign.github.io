@@ -20,8 +20,14 @@ For this project I used social media icons from [simpleicons](https://simpleicon
 
 ## License
 
-The license is `GPLv3`
+1. Give Credit: Please credit me as the original creator and link to the license. Just don’t imply that I endorse your use.
 
-`You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications to or software including (via compiler) GPL-licensed code must also be made available under the GPL along with build & install instructions.`
+2. NonCommercial: Please don’t use my work for commercial purposes.
 
-⚠️ This is just a summary, not the actual license. The full license can be read in the text file simply called `LICENSE` or at [choosealicense.com](https://choosealicense.com/licenses/gpl-3.0/)
+3. No Changes: If you modify the material, I ask that you don’t share your modified version.
+
+---
+
+[Read more about the license](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+[Read full license](https://github.com/smlxdesign/smlxdesign.github.io/blob/main/LICENSE)
