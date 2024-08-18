@@ -27,6 +27,7 @@ After a two week break from the project, i finally came back to add a fantastic 
 [CSS filter Generator](https://codepen.io/sosuke/pen/Pjoqqp)
 
 ## License
+This project uses the CC BY-NC-ND 4.0
 
 1. Give Credit: Please credit me as the original creator and link to the license. Just don’t imply that I endorse your use.
 
