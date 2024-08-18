@@ -79,11 +79,13 @@ h2 {
 
 .color-themes {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 8px;
 	position: absolute;
+	align-items: center;
 	top: 16px;
 	left: 16px;
-	align-items: center;
+	width: 90vw;
 }
 
 button {

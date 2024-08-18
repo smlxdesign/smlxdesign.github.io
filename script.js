@@ -30,12 +30,12 @@ function displayThemePicker(show) {
 	if (show) {
 		divElement.innerHTML = `
 			<button data-color-theme="hide">Hide</button>
-			<span>|</span>
+			<span>·</span>
 			<button data-color-theme="red">Red</button>
 			<button data-color-theme="green">Green</button>
 			<button data-color-theme="blue">Blue</button>
 			<button data-color-theme="purple">Purple</button>
-			<span>|</span>
+			<span>·</span>
 			<button class="dark-mode-button" data-color-theme="dark">Dark Mode</button>
 		`;
 	} else {
@@ -46,6 +46,11 @@ function displayThemePicker(show) {
 // Initialize the theme
 setColorTheme(currentTheme.color, currentTheme.darkMode);
 displayThemePicker(showThemePicker);
+
+document.addEventListener('DOMContentLoaded', () => {
+	setColorTheme(currentTheme.color, currentTheme.darkMode);
+	displayThemePicker(showThemePicker);
+});
 
 // Use event delegation to handle dynamically created buttons
 divElement.addEventListener('click', (event) => {
