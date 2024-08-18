@@ -1,0 +1,72 @@
+* {
+	transition: background-color 0.7s, color 0.7s, filter 0.7s;
+}
+@media (prefers-reduced-motion: reduce) {
+	* {
+		transition: none;
+	}
+}
+
+.red-theme {
+	--bg: oklch(78.43% 0.0783 13.14);
+	--fg: oklch(29.47% 0.0783 13.14);
+	--accent: oklch(72.26% 0.0783 13.14);
+	--img-fg: invert(12%) sepia(37%) saturate(1828%) hue-rotate(311deg)
+		brightness(92%) contrast(97%);
+}
+
+.dark-red-theme {
+	--bg: oklch(29.47% 0.0783 13.14);
+	--fg: oklch(78.43% 0.0783 13.14);
+	--accent: oklch(35.48% 0.0783 13.14);
+	--img-fg: invert(77%) sepia(7%) saturate(2308%) hue-rotate(307deg)
+		brightness(100%) contrast(80%);
+}
+
+.green-theme {
+	--bg: oklch(78.43% 0.0783 151.41);
+	--fg: oklch(29.47% 0.0783 151.41);
+	--accent: oklch(72.26% 0.0783 151.41);
+	--img-fg: invert(14%) sepia(66%) saturate(1357%) hue-rotate(118deg)
+		brightness(90%) contrast(105%);
+}
+
+.dark-green-theme {
+	--bg: oklch(29.47% 0.0783 151.41);
+	--fg: oklch(78.43% 0.0783 151.41);
+	--accent: oklch(35.48% 0.0783 151.41);
+	--img-fg: invert(82%) sepia(21%) saturate(448%) hue-rotate(82deg)
+		brightness(90%) contrast(86%);
+}
+
+.blue-theme {
+	--bg: oklch(78.43% 0.0783 273.79);
+	--fg: oklch(29.47% 0.0783 273.79);
+	--accent: oklch(72.26% 0.0783 273.79);
+	--img-fg: invert(12%) sepia(23%) saturate(4468%) hue-rotate(215deg)
+		brightness(91%) contrast(90%);
+}
+
+.dark-blue-theme {
+	--bg: oklch(29.47% 0.0783 273.79);
+	--fg: oklch(78.43% 0.0783 273.79);
+	--accent: oklch(35.48% 0.0783 273.79);
+	--img-fg: invert(61%) sepia(14%) saturate(737%) hue-rotate(191deg)
+		brightness(115%) contrast(98%);
+}
+
+.purple-theme {
+	--bg: oklch(78.43% 0.0783 297.29);
+	--fg: oklch(29.47% 0.0783 297.29);
+	--accent: oklch(72.26% 0.0783 297.29);
+	--img-fg: invert(14%) sepia(37%) saturate(1094%) hue-rotate(220deg)
+		brightness(92%) contrast(95%);
+}
+
+.dark-purple-theme {
+	--bg: oklch(29.47% 0.0783 297.29);
+	--fg: oklch(78.43% 0.0783 297.29);
+	--accent: oklch(35.48% 0.0783 297.29);
+	--img-fg: invert(78%) sepia(32%) saturate(754%) hue-rotate(201deg)
+		brightness(91%) contrast(96%);
+}
