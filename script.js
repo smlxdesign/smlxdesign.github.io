@@ -2,21 +2,28 @@ const bodyElement = document.querySelector('body');
 const divElement = document.querySelector('.color-themes');
 const darkModeButton = document.querySelector('.dark-mode-button');
 
-let currentColor = 'blue';
-let darkMode = false;
+let currentTheme = JSON.parse(localStorage.getItem('theme'));
+
+if (!currentTheme) {
+	currentTheme = {
+		color: 'blue',
+		darkMode: false,
+	};
+}
 let showThemePicker = false;
 
-function setColorTheme(color, dark) {
+function setColorTheme(color, darkMode) {
 	bodyElement.className = ''; // Reset body class
-	if (dark) {
+	if (darkMode) {
 		bodyElement.classList.add(`dark-${color}-theme`);
 		darkModeButton.innerHTML = 'Light Mode';
 	} else {
 		bodyElement.classList.add(`${color}-theme`);
 		darkModeButton.innerHTML = 'Dark Mode';
 	}
-	currentColor = color;
-	darkMode = dark; // Update darkMode state
+
+	currentTheme = { color, darkMode };
+	localStorage.setItem('theme', JSON.stringify(currentTheme));
 }
 
 function displayThemePicker(show) {
@@ -37,7 +44,7 @@ function displayThemePicker(show) {
 }
 
 // Initialize the theme
-setColorTheme(currentColor, darkMode);
+setColorTheme(currentTheme.color, currentTheme.darkMode);
 displayThemePicker(showThemePicker);
 
 // Use event delegation to handle dynamically created buttons
@@ -47,10 +54,10 @@ divElement.addEventListener('click', (event) => {
 
 	const newColor = button.dataset.colorTheme;
 	if (newColor === 'dark') {
-		setColorTheme(currentColor, !darkMode); // Toggle dark mode with current color
+		setColorTheme(currentTheme.color, !currentTheme.darkMode); // Toggle dark mode with current color
 	} else if (newColor === 'hide' || newColor === 'show') {
 		displayThemePicker(newColor === 'show');
 	} else {
-		setColorTheme(newColor, darkMode); // Change color, maintain dark mode state
+		setColorTheme(newColor, currentTheme.darkMode); // Change color, maintain dark mode state
 	}
 });
