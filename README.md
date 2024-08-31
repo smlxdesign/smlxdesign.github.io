@@ -2,7 +2,6 @@
 
 <!-- Shields.io -->
 
-![GitHub License](https://img.shields.io/github/license/smlxdesign/smlxdesign.github.io)
 ![Static Badge](https://img.shields.io/badge/HTML-%23E44D26?logo=html5&logoColor=%23fff)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fsmlxdesign.github.io)
 
