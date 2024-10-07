@@ -1,0 +1,15 @@
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.project::before {
+  content: "";
+}
